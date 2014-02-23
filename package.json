@@ -15,5 +15,9 @@
     "server"
   ],
   "author": "Chris Newton <chris@seanewt.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "~0.13.1",
+    "request": "~2.34.0"
+  }
 }

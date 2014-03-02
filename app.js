@@ -1,5 +1,17 @@
-var Scraper = require('./lib/scraper');
+var doubledecker = require('./lib/doubledecker');
 
-Scraper.scrape(6743, function (err, timetable) {
-  console.log(timetable);
+doubledecker.getStopsNear({
+  lat: 50.817384,
+  lng: -0.106533,
+  service: 7,
+  within: 50
+})
+.then(function (stops) {
+  stops.forEach(function (stop) {
+    console.log(stop.name);
+
+    stop.departures.forEach(function (dep) {
+      console.log(dep.serviceName, dep.destination, dep.etdString);
+    });
+  });
 });

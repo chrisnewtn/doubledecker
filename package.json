@@ -1,6 +1,6 @@
 {
   "name": "doubledecker",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A server and API for regurgitating transit information",
   "main": "app.js",
   "keywords": [
